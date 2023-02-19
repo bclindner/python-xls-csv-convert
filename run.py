@@ -23,7 +23,7 @@ try:
     xls_path = Path(argv[1])
     assert xls_path.is_file(), "Specified path is not a file"
     assert xls_path.exists(), "Specified XLS file does not exist"
-    csv_path = xls_path / "./output.csv"
+    csv_path = (xls_path / ".." /  "output.csv").resolve()
     assert not csv_path.exists(), "output.csv already exists"
 except AssertionError as exc:
     print(f"Could not run script: {exc}")
