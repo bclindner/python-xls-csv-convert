@@ -1,4 +1,4 @@
-# Python XLS-to-CSV Processing Script
+# Python XLSX-to-CSV Processing Script
 
 This script opens an XLSX file at a provided path with the format:
 
