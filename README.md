@@ -1,6 +1,6 @@
 # Python XLS-to-CSV Processing Script
 
-This script opens an `employee.xls` file at a provided path with the format:
+This script opens an XLSX file at a provided path with the format:
 
 | employeeid | expense1 | expense2 | expense3 | totalexpense |
 |------------|----------|----------|----------|--------------|
@@ -45,7 +45,7 @@ Once your virtual environment is initialized, install the requirements:
 pip install -r requirements.txt
 ```
 
-You can now launch the script - run this command with the directory of the XLS
+You can now launch the script - run this command with the directory of the XLSX
 file as an argument:
 
 ```ps1
@@ -53,7 +53,7 @@ python run.py C:\temp\incoming\employee.xls
 ```
 
 If everything was set up correctly, the program should have created a new file,
-`output.csv`, in the same folder as the `employee.xls` file.
+`output.csv`, in the same folder as the `employee.xlsx` file.
 
 The script is configured to fail on the following cases, for safety:
 * A path was not specified when running
